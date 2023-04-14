@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  :root {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 2920px) {
+  :root {
+    font-size: 34px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  height: fit-content;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+}
+
+@media (max-width: 960px) {
+  body {
+    height: fit-content;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+  }
+
+  .form-container {
+    margin-left: 0px !important;
+  }
+}
+
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.twinkler {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  -moz-animation: move-background 40s linear infinite;
+  -ms-animation: move-background 40s linear infinite;
+  -o-animation: move-background 40s linear infinite;
+  -webkit-animation: move-background 40s linear infinite;
+  animation: move-background 40s linear infinite;
+}
